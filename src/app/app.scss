@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +13,17 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+ion-modal.inset .modal-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - (80%/2));
+  width: 80%;
+  height: 60%;
+}
+
+@media not all and (min-height: 600px) and (min-width: 768px) {
+  ion-modal.inset ion-backdrop {
+    visibility: visible;
+  }
+}
